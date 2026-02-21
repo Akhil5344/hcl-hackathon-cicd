@@ -1,14 +1,19 @@
 variable "project_id" {
-  description = "The GCP Project ID"
-  default     = "ninth-iris-485511-r4"
-  type        = string
+  type = string
 }
 
 variable "region" {
-  description = "GCP Region"
-  default     = "us-central1"
+  type = string
 }
 
 variable "cluster_name" {
-  default = "cluster-1"
+  type = string
+}
+
+variable "vpc_id" {
+  type = string
+}
+
+variable "subnet_id" {
+  type = string
 }
